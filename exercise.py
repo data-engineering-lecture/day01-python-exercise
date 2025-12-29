@@ -24,8 +24,7 @@ def calculate_sum(numbers: list) -> int | float:
 
     힌트: sum() 내장 함수를 사용하세요
     """
-    # TODO: 여기에 코드를 작성하세요
-    pass
+    return sum(numbers)
 
 
 def find_max(numbers: list) -> int | float:
@@ -46,8 +45,7 @@ def find_max(numbers: list) -> int | float:
 
     힌트: max() 내장 함수를 사용하세요
     """
-    # TODO: 여기에 코드를 작성하세요
-    pass
+    return max(numbers)
 
 
 def find_min(numbers: list) -> int | float:
@@ -68,8 +66,7 @@ def find_min(numbers: list) -> int | float:
 
     힌트: min() 내장 함수를 사용하세요
     """
-    # TODO: 여기에 코드를 작성하세요
-    pass
+    return min(numbers)
 
 
 def calculate_average(numbers: list) -> float:
@@ -90,8 +87,7 @@ def calculate_average(numbers: list) -> float:
 
     힌트: sum()과 len() 함수를 조합하세요
     """
-    # TODO: 여기에 코드를 작성하세요
-    pass
+    return sum(numbers) / len(numbers)
 
 
 def filter_even(numbers: list) -> list:
@@ -114,7 +110,7 @@ def filter_even(numbers: list) -> list:
           n % 2 == 0 이면 짝수입니다
     """
     # TODO: 여기에 코드를 작성하세요
-    pass
+    return [n for n in numbers if n % 2 == 0]
 
 
 def filter_odd(numbers: list) -> list:
@@ -137,7 +133,7 @@ def filter_odd(numbers: list) -> list:
           n % 2 != 0 이면 홀수입니다
     """
     # TODO: 여기에 코드를 작성하세요
-    pass
+    return [n for n in numbers if n % 2 != 0]
 
 
 def count_occurrences(items: list, target) -> int:
@@ -160,7 +156,7 @@ def count_occurrences(items: list, target) -> int:
     힌트: list.count() 메서드를 사용하세요
     """
     # TODO: 여기에 코드를 작성하세요
-    pass
+    return items.count(target)
 
 
 def remove_duplicates(items: list) -> list:
@@ -183,7 +179,7 @@ def remove_duplicates(items: list) -> list:
           list(dict.fromkeys(items))
     """
     # TODO: 여기에 코드를 작성하세요
-    pass
+    return list(dict.fromkeys(items))
 
 
 def reverse_string(text: str) -> str:
@@ -205,7 +201,7 @@ def reverse_string(text: str) -> str:
     힌트: 슬라이싱 [::-1]을 사용하세요
     """
     # TODO: 여기에 코드를 작성하세요
-    pass
+    return text[::-1]
 
 
 def is_palindrome(text: str) -> bool:
@@ -230,4 +226,4 @@ def is_palindrome(text: str) -> bool:
     힌트: 문자열과 뒤집은 문자열을 비교하세요
     """
     # TODO: 여기에 코드를 작성하세요
-    pass
+    return text == text[::-1]
